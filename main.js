@@ -3,8 +3,6 @@ const accordionItemHeaders = document.querySelectorAll(".accordion-item-header")
 accordionItemHeaders.forEach(accordionItemHeader => {
   accordionItemHeader.addEventListener("click", event => {
 
-    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-
     const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
     if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
       currentlyActiveAccordionItemHeader.classList.toggle("active");
